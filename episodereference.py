@@ -60,17 +60,27 @@ if "--newshow" in argv:
         sleep(0.25)
         flags = input("Article Flags (0 for none, 1 for first-timer, 2 for selection, 3 for both): ")
         # We're going to put this both in the sqlite database and the Cafe archive.
-        articleinsert=[(page["fullname"], page["title_shown"], page["created_by"], page["content"], flags)]
         print "Adding " + article + " to articles table."
-        db.execute('INSERT INTO articles VALUES(NULL,?,?,?,?,?)', (page["fullname"], page["title_shown"], page["created_by"], page["content"], flags))
+        try:
+            db.execute('INSERT INTO articles VALUES(NULL,?,?,?,?,?)',
+                       (page["fullname"], page["title_shown"], page["created_by"], page["content"], flags))
+        except sqlite3.IntegrityError:
+            newauthor = raw_input("Author has deleted their account. Please provide their username: ")
+            db.execute('INSERT INTO articles VALUES(NULL,?,?,?,?,?)',
+                       (page["fullname"], page["title_shown"], newauthor, page["content"], flags))
         conn.commit()
         article_id = db.lastrowid
-        appearances = [(show_id,article_id)]
+        appearances = [(show_id, article_id)]
         print "Associating " + article + " to show."
-        db.execute('INSERT INTO appearances VALUES(NULL,?,?,NULL)', (show_id,article_id))
+        db.execute('INSERT INTO appearances VALUES(NULL,?,?,NULL)', (show_id, article_id))
         conn.commit()
+
+    for article in sluglist:
         # Now, to stick in the Cafe archive.
         # Correct workflow is create the page, then import the files.
+        page = s.pages.get_one({"site": config.wikidot_site, "page": article})
+        # Obey the speed limit.
+        sleep(0.25)
         print "Saving page to wikidot."
         page["tags"].append('_archived-article')
         newpage = s.pages.save_one({"site": config.cafe_site, "page": page["fullname"], "title": page["title_shown"], "content": page["content"], "tags": page["tags"]})
