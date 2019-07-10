@@ -34,10 +34,16 @@ else:
         oldfiles = s.files.select({"site": config.wikidot_site, "page": page["fullname"]})
         sleep(0.25)
         for filename in oldfiles:
-            print "Getting " + filename + "."
+            try:
+                print "Getting " + filename + "."
+            except UnicodeEncodeError:
+                pass
             attachment = s.files.get_one({"site": config.wikidot_site, "page": page["fullname"], "file": filename})
             sleep(0.25)
-            print "Uploading " + filename + " to cafe wiki."
+            try:
+                print "Uploading " + filename + " to cafe wiki."
+            except UnicodeEncodeError:
+                pass
             upload = s.files.save_one(
                 {"site": config.cafe_site, "page": page["fullname"], "file": filename, "content": attachment["content"],
                  "comment": attachment["comment"], "revision_comment": "Uploaded with cafetools."})

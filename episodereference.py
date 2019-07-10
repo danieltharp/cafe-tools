@@ -50,8 +50,8 @@ if "--newshow" in argv:
     conn.commit()
     print "Show added successfully."
     show_id = db.lastrowid
-    slugs = raw_input("Slugs to retrieve for show, separated by commas, no spaces: ")
-    sluglist = slugs.split(",")
+    slugs = raw_input("Slugs to retrieve for show, separated by commas with one trailing space: ")
+    sluglist = slugs.split(", ")
     for article in sluglist:
         # Get the actual page content and full metadata set.
         print "Pulling " + article
@@ -89,9 +89,15 @@ if "--newshow" in argv:
         oldfiles = s.files.select({"site": config.wikidot_site, "page": page["fullname"]})
         sleep(0.25)
         for filename in oldfiles:
-            print "Getting " + filename + "."
+            try:
+                print "Getting " + filename + "."
+            except UnicodeEncodeError:
+                pass
             attachment = s.files.get_one({"site": config.wikidot_site, "page": page["fullname"], "file": filename})
             sleep(0.25)
-            print "Uploading " + filename + " to cafe wiki."
+            try:
+                print "Uploading " + filename + " to cafe wiki."
+            except UnicodeEncodeError:
+                pass
             upload = s.files.save_one({"site": config.cafe_site, "page": page["fullname"], "file": filename,"content": attachment["content"], "comment": attachment["comment"], "revision_comment": "Uploaded with cafetools."})
             sleep(0.25)
