@@ -101,3 +101,30 @@ if "--newshow" in argv:
                 pass
             upload = s.files.save_one({"site": config.cafe_site, "page": page["fullname"], "file": filename,"content": attachment["content"], "comment": attachment["comment"], "revision_comment": "Uploaded with cafetools."})
             sleep(0.25)
+
+def output():
+    w = open("wikidot.txt","w")
+    w.write("")
+    w.close()
+    w = open("wikidot.txt", "a")
+
+    h = open("html.txt", "w")
+    h.write("")
+    h.close()
+    h = open("html.txt", "a")
+
+    appearances = conn.execute("SELECT * FROM appearances JOIN shows on shows.id = appearances.show_id JOIN articles on articles.id = appearances.article_id ORDER BY id")
+    wikidotoutput = ""
+    htmloutput = ""
+
+    w.write("||~ Episode ||~ Article ||~ Author ||\n")
+    h.write("<table class='wp-block-table tablesorter'><thead><tr><th>Episode ↕</th><th>Article ↕</th><th>Author ↕</th></tr></thead><tbody>")
+
+    for row in appearances.fetchall():
+        w.write("||[*" + row[6] + " " + row[5] + "]||[*http://scp-wiki.net/" + row[9] + " " + row[10] + "] ([*http://scpcafe.wikidot.com/" + row[9] + " Archive])||[[*user " + row[11] + "]]||\n")
+        h.write("<tr><td><a href='" + row[6] + "' target='_blank' rel='noreferrer noopener' aria-label='" + row[5] + " (opens in a new tab)'>" + row[5] + "</a></td><td><a href='http://www.scp-wiki.net/" + row[9] + "' target='_blank' rel='noreferrer noopener' aria-label='" + row[10] + "(opens in a new tab)'>" + row[10] + "</a>          </td><td>" + row[11] + "</td></tr>")
+
+    h.write("</tbody></table>")
+
+if "--output" in argv:
+    output()
