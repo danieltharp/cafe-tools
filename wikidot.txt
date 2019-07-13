@@ -27,10 +27,10 @@
 ||[*https://scp.cafe/2019/01/03/recap-2019-week-1-part-1/ Recap: 2019, Week 1 (Part 1)]||[*http://scp-wiki.net/scp-4337 SCP-4337] ([*http://scpcafe.wikidot.com/scp-4337 Archive])||[[*user daveyoufool]]||
 ||[*https://scp.cafe/2019/01/03/recap-2019-week-1-part-1/ Recap: 2019, Week 1 (Part 1)]||[*http://scp-wiki.net/scp-4880 SCP-4880] ([*http://scpcafe.wikidot.com/scp-4880 Archive])||[[*user MacWarren]]||
 ||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-1322-j SCP-1322-J] ([*http://scpcafe.wikidot.com/scp-1322-j Archive])||[[*user DrLycus]]||
-||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-351 SCP-351] ([*http://scpcafe.wikidot.com/scp-351 Archive])||[[*user 9Volt]]||
+||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-351 SCP-351] ([*http://scpcafe.wikidot.com/scp-351 Archive])||[[*user NatVoltaic]]||
 ||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-3597 SCP-3597] ([*http://scpcafe.wikidot.com/scp-3597 Archive])||[[*user aismallard]]||
 ||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-3634 SCP-3634] ([*http://scpcafe.wikidot.com/scp-3634 Archive])||[[*user Ihp]]||
-||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-3841 SCP-3841] ([*http://scpcafe.wikidot.com/scp-3841 Archive])||[[*user 9Volt]]||
+||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-3841 SCP-3841] ([*http://scpcafe.wikidot.com/scp-3841 Archive])||[[*user NatVoltaic]]||
 ||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-4434 SCP-4434] ([*http://scpcafe.wikidot.com/scp-4434 Archive])||[[*user Cyantreuse]]||
 ||[*https://scp.cafe/2019/01/05/recap-2019-week-1-part-2/ Recap: 2019, Week 1 (Part 2)]||[*http://scp-wiki.net/scp-4801 SCP-4801] ([*http://scpcafe.wikidot.com/scp-4801 Archive])||[[*user KindlyTurtleClem]]||
 ||[*https://scp.cafe/2019/01/12/recap-2019-week-2-part-1/ Recap: 2019, Week 2 (Part 1)]||[*http://scp-wiki.net/scp-4065 SCP-4065] ([*http://scpcafe.wikidot.com/scp-4065 Archive])||[[*user Arcade0416]]||
@@ -159,3 +159,9 @@
 ||[*https://scp.cafe/2019/07/05/recap-2019-week-27/ Recap: 2019, Week 27]||[*http://scp-wiki.net/scp-4838 SCP-4838] ([*http://scpcafe.wikidot.com/scp-4838 Archive])||[[*user aismallard]]||
 ||[*https://scp.cafe/2019/07/10/deep-dive-scp-4406-and-uiu-file-2017-102/ Deep Dive: SCP-4406 and UIU File 2017-102]||[*http://scp-wiki.net/scp-4406 SCP-4406] ([*http://scpcafe.wikidot.com/scp-4406 Archive])||[[*user pxdnbluesoul]]||
 ||[*https://scp.cafe/2019/07/10/deep-dive-scp-4406-and-uiu-file-2017-102/ Deep Dive: SCP-4406 and UIU File 2017-102]||[*http://scp-wiki.net/uiu-file-2017-102 UIU File: 2017-102] ([*http://scpcafe.wikidot.com/uiu-file-2017-102 Archive])||[[*user pxdnbluesoul]]||
+||[*https://scp.cafe/2019/07/13/recap-2019-week-28/ Recap: 2019, Week 28]||[*http://scp-wiki.net/scp-4056 SCP-4056] ([*http://scpcafe.wikidot.com/scp-4056 Archive])||[[*user Uncle Nicolini]]||
+||[*https://scp.cafe/2019/07/13/recap-2019-week-28/ Recap: 2019, Week 28]||[*http://scp-wiki.net/scp-4710 SCP-4710] ([*http://scpcafe.wikidot.com/scp-4710 Archive])||[[*user A Random Day]]||
+||[*https://scp.cafe/2019/07/13/recap-2019-week-28/ Recap: 2019, Week 28]||[*http://scp-wiki.net/scp-4766 SCP-4766] ([*http://scpcafe.wikidot.com/scp-4766 Archive])||[[*user MaliceAforethought]]||
+||[*https://scp.cafe/2019/07/13/recap-2019-week-28/ Recap: 2019, Week 28]||[*http://scp-wiki.net/scp-4819 SCP-4819] ([*http://scpcafe.wikidot.com/scp-4819 Archive])||[[*user hi im stel]]||
+||[*https://scp.cafe/2019/07/13/recap-2019-week-28/ Recap: 2019, Week 28]||[*http://scp-wiki.net/scp-4853 SCP-4853] ([*http://scpcafe.wikidot.com/scp-4853 Archive])||[[*user aismallard]]||
+||[*https://scp.cafe/2019/07/13/recap-2019-week-28/ Recap: 2019, Week 28]||[*http://scp-wiki.net/scp-4867 SCP-4867] ([*http://scpcafe.wikidot.com/scp-4867 Archive])||[[*user Tufto]]||
