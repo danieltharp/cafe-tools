@@ -103,12 +103,12 @@ if "--newshow" in argv:
             sleep(0.25)
 
 def output():
-    w = open("wikidot.txt","w")
+    w = open("wikidot.txt","w+")
     w.write("")
     w.close()
     w = open("wikidot.txt", "a")
 
-    h = open("html.txt", "w")
+    h = open("html.txt", "w+")
     h.write("")
     h.close()
     h = open("html.txt", "a")
@@ -125,6 +125,12 @@ def output():
         h.write("<tr><td><a href='" + row[6] + "' target='_blank' rel='noreferrer noopener' aria-label='" + row[5] + " (opens in a new tab)'>" + row[5] + "</a></td><td><a href='http://www.scp-wiki.net/" + row[9] + "' target='_blank' rel='noreferrer noopener' aria-label='" + row[10] + "(opens in a new tab)'>" + row[10] + "</a>          </td><td>" + row[11] + "</td></tr>")
 
     h.write("</tbody></table>")
+
+    # Upload to wikidot.
+    w.close()
+    w = open("wikidot.txt", "r")
+    wstr = w.read()
+    updatereference = s.pages.save_one({"site": config.cafe_site, "page": "episode-reference", "title": "Episode Reference", "content": wstr})
 
 if "--output" in argv:
     output()
