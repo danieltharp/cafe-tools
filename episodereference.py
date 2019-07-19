@@ -129,7 +129,7 @@ def output():
         elif row[13] is 3:
             w.write(" †¤")
         w.write("||[[*user " + row[11] + "]]||\n")
-        h.write("<tr><td><a href='" + row[6] + "' target='_blank' rel='noreferrer noopener' aria-label='" + row[5] + " (opens in a new tab)'>" + row[5] + "</a></td><td><a href='http://www.scp-wiki.net/" + row[9] + "' target='_blank' rel='noreferrer noopener' aria-label='" + row[10] + "(opens in a new tab)'>" + row[10] + "</a> (<a href='http://scpcafe.wikidot.com/" + row[9] + "Archive</a>)")
+        h.write("<tr><td><a href='" + row[6] + "' target='_blank' rel='noreferrer noopener' aria-label='" + row[5] + " (opens in a new tab)'>" + row[5] + "</a></td><td><a href='http://www.scp-wiki.net/" + row[9] + "' target='_blank' rel='noreferrer noopener' aria-label='" + row[10] + "(opens in a new tab)'>" + row[10] + "</a> (<a href='http://scpcafe.wikidot.com/" + row[9] + "'>Archive</a>)")
         if row[13] is 1:
             h.write(" †")
         elif row[13] is 2:
